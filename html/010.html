@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML 속성 실습</title>
+        <style>
+            .red-text {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <a> 태그 속성 -->
+        <a href="https://www.uzu-dev.kr" target="_blank" title="외부 링크"> 사이트 바로가기 </a>
+
+        <br /><br />
+
+        <!--  <img> 태그 속성 -->
+        <img src="./images/example-bird.jpg" alt="숲 속 새 사진" width="300" height="200" />
+
+        <br /><br />
+
+        <!-- <input> 태그 속성 -->
+        <input type="text" name="username" placeholder="아이디를 입력하세요" required />
+
+        <br /><br />
+
+        <!-- 인라인 스타일 vs 클래스 -->
+        <p style="color: blue">이것은 인라인 스타일입니다.</p>
+        <p class="red-text">이것은 클래스 기반 스타일입니다.</p>
+
+        <br /><br />
+
+        <!-- 사용자 정의 속성 -->
+        <div data-user-id="101" data-role="admin">관리자 영역</div>
+
+        <script>
+            const div = document.querySelector('[data-user-id]');
+            alert('유저 ID: ' + div.dataset.userId + ' / 역할: ' + div.dataset.role);
+        </script>
+    </body>
+</html>

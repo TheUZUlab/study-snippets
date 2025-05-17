@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>iframe 및 삽입 태그 실습</title>
+    </head>
+    <body>
+        <!-- 외부 웹페이지 삽입 -->
+        <iframe src="https://www.uzu-dev.kr" width="600" height="400"></iframe>
+
+        <br />
+
+        <!-- 유튜브 영상 삽입 -->
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Xx_eoxvYvc8"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+        >
+        </iframe>
+
+        <br />
+
+        <!-- 구글 지도 삽입 -->
+        <iframe
+            src="https://www.google.com/maps/embed?..."
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+    </body>
+</html>
